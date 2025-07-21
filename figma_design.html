@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: rgb(30, 30, 30);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .container {
+        display: flex;
+        max-width: 1200px;
+        gap: 60px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .text-section {
+        max-width: 400px;
+      }
+
+      .text-section h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      .text-section h1 span {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .pink {
+        color: #f9b3c2;
+      }
+
+      .blue {
+        color: #76c2f7;
+      }
+
+      .green {
+        color: #65f3c2;
+      }
+
+      .text-section p {
+        color: #ccc;
+        margin-top: 20px;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .explore-btn {
+        margin-top: 30px;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 10px 24px;
+        border-radius: 9999px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      .explore-btn:hover {
+        background-color: #e5e5e5;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        gap: 16px;
+      }
+
+      .grid img {
+        width: 100px;
+        height: 100px;
+        border-radius: 20px;
+        object-fit: cover;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          flex-direction: column;
+          gap: 40px;
+        }
+
+        .grid {
+          grid-template-columns: repeat(5, 70px);
+        }
+
+        .grid img {
+          width: 70px;
+          height: 70px;
+        }
+
+        .text-section h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text-section">
+        <span><h1 class="pink">DESIGN.</h1></span>
+        <span><h1 class="blue">CREATE.</h1></span>
+        <span><h1 class="green">INSPIRE.</h1></span>
+
+        <p class="para">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipiscing elit. Faucibus <br />in libero risus semper
+          habitant arcu <br />eget. Et integer facilisi eget.
+        </p>
+        <button class="explore-btn">Explore</button>
+      </div>
+      <div class="grid">
+        <img src="image.png" alt="yellow" />
+        <img src="image copy.png" alt="white" />
+        <img src="image copy 2.png" alt="orange" />
+        <img src="image copy 3.png" alt="pink" />
+        <img src="image.png" alt="yellow" />
+        <img src="image copy.png" alt="white" />
+        <img src="image copy 2.png" alt="orange" />
+        <img src="image copy 3.png" alt="pink" />
+        <img src="image.png" alt="yellow" />
+        <img src="image copy.png" alt="white" />
+        <img src="image copy 2.png" alt="orange" />
+        <img src="image copy 3.png" alt="pink" />
+        <img src="image.png" alt="yellow" />
+        <img src="image copy.png" alt="white" />
+        <img src="image copy 2.png" alt="orange" />
+        <img src="image copy 3.png" alt="pink" />
+      </div>
+    </div>
+  </body>
+</html>
